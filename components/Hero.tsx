@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-text-main leading-tight tracking-tight mb-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            Deepu <br/> 
+            Deepu Krishnareddy <br/> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-DEFAULT via-pastel-pink to-pastel-blue">Krishnareddy</span>
           </h1>
           
