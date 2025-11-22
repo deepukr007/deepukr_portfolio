@@ -132,7 +132,7 @@ const Experience: React.FC = () => {
           {/* Education Column (Narrower) */}
           <div className="lg:col-span-5">
             <h2 className="text-3xl font-display font-bold text-text-main mb-12 animate-on-scroll delay-200 flex items-center gap-3">
-              Education <span className="text-pastel-pink">&</span> Awards
+              Education
             </h2>
             
             <div className="space-y-6 sticky top-24">
