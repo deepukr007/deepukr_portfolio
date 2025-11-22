@@ -5,7 +5,7 @@ export const CONTACT_INFO = {
   name: "Deepu Krishnareddy",
   title: "AI/ML Engineer & Research Associate",
   email: "deepukreddy007@gmail.com",
-  phone: "+49 174 2500937",
+  phone: "+49 176 62815428",
   location: "Freiburg, Germany",
   summary: "Passionate AI/ML Engineer bridging the gap between research and application. Specialized in Computer Vision, Human-Robot Interaction, and Generative AI with a strong foundation in Embedded Systems."
 };
@@ -19,7 +19,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const SKILLS: SkillCategory[] = [
   {
     name: "Programming Languages",
-    skills: ["Python", "Javascript", "C"]
+    skills: ["Python", "Javascript"]
   },
   {
     name: "Machine Learning",
@@ -27,7 +27,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "GenAI & LLMs",
-    skills: ["LangChain", "Agno", "Vector Databases", "Prompt Engineering", "RAG", "Florence-2", "GPT-4o API"]
+    skills: ["LangChain", "Agno", "Vector Databases", "Prompt Engineering", "RAG", "OpenAI API"]
   },
   {
     name: "Web Development",
@@ -35,7 +35,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "DevOps & Tools",
-    skills: ["Docker", "Git", "MLFlow (MLOps)", "Github Actions (CI/CD)", "CVAT"]
+    skills: ["Docker", "Git", "MLFlow (MLOps)", "Github Actions (CI/CD)"]
   }
 ];
 
