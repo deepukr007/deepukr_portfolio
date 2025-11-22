@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepu Krishnareddy | AI/ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              bg: {
+                main: '#FDFBF7', // Very warm cream/off-white
+                card: '#FFFFFF', // Pure White
+                hover: '#F3E8FF', // Very pale lavender (Pastel Hover)
+              },
+              text: {
+                main: '#1E293B', // Slate 800 (High Contrast Dark)
+                muted: '#475569', // Slate 600 (Medium Contrast)
+                dim: '#94A3B8', // Slate 400 (Low priority)
+              },
+              pastel: {
+                purple: '#C084FC', // Pastel Purple
+                pink: '#F472B6', // Pastel Pink
+                blue: '#60A5FA', // Pastel Blue
+                green: '#4ADE80', // Pastel Green
+                yellow: '#FDE047', // Pastel Yellow
+                mint: '#5EEAD4', // Pastel Mint
+              },
+              accent: {
+                DEFAULT: '#A855F7', // Stronger Purple for better visibility
+                hover: '#9333EA', // Darker Purple
+                light: '#E9D5FF', // Very light purple
+                secondary: '#2DD4BF', // Stronger Teal
+              },
+              border: {
+                light: '#E2E8F0', // Slate 200 - Stronger borders
+                subtle: 'rgba(192, 132, 252, 0.15)', // Slightly more visible tint
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+              'fade-in-down': 'fadeInDown 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'blob': 'blob 15s infinite',
+              'float': 'float 8s ease-in-out infinite',
+              'float-delayed': 'float 8s ease-in-out 4s infinite',
+              'scan': 'scan 6s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              scan: {
+                '0%': { transform: 'translateY(-100%)', opacity: '0' },
+                '50%': { opacity: '0.5' },
+                '100%': { transform: 'translateY(100%)', opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FDFBF7;
+        color: #1E293B;
+        overflow-x: hidden;
+      }
+      
+      /* Minimal Scrollbar - Pastel Style */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDFBF7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D8B4FE; /* Darker Pastel Purple for visibility */
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #A855F7;
+      }
+
+      /* Selection - Pastel */
+      ::selection {
+        background: #FBCFE8; /* Pastel Pink */
+        color: #831843;
+      }
+
+      /* Utility for subtle grid bg */
+      .bg-grid-pattern {
+        background-image: radial-gradient(#94A3B8 1px, transparent 1px); /* Darker dots */
+        background-size: 40px 40px;
+      }
+
+      /* Scroll Trigger Animations */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      
+      .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Stagger delays */
+      .delay-100 { transition-delay: 100ms; }
+      .delay-200 { transition-delay: 200ms; }
+      .delay-300 { transition-delay: 300ms; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
